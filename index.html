@@ -1,0 +1,292 @@
+<!-- saved from url=(0061)http://www.yunhaiwang.net/infoVis2020/SubspacePage/index.html -->
+<html style=""><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Data Playwright</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Verdana, Helvetica, sans-serif
+        }
+
+        section {
+            width: 100%;
+            float: left;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            float: left;
+            display: block;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007acd;
+        }
+
+        a:hover {
+            color: #75c8ff;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 1em 2em 2em 2em;
+        }
+
+        .two-column {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .v-column {
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+        }
+
+
+
+        .img-container {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .split {
+            width: 10px;
+            height: 100%;
+        }
+
+        .img-inner-container {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .caption {
+            float: left;
+            width: 100%;
+            text-align: center;
+            margin: 6px 0 0 0;
+        }
+
+        .img-inner-container .item {
+            display: block;
+            float: left;
+        }
+
+        .img-inner-container .item img {
+            float: left;
+            height: 180px;
+        }
+
+        .img-inner-container .item p {
+            clear: both;
+            float: left;
+            text-align: center;
+            margin: 10px 0 0 0;
+            width: 100%;
+        }
+
+        .para-title {
+            float: left;
+            margin: 30px 0 0 0;
+        }
+
+        .column .para-title {
+            float: left;
+            margin: 0px 10px 0 0;
+        }
+
+        .style1 {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 20px;
+            FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif
+        }
+    </style>
+</head>
+
+
+<body data-new-gr-c-s-check-loaded="8.906.0" data-gr-ext-installed="" style="margin-bottom: 8px !important;">
+    <!--=======draw top line========= -->
+    <div class="container">
+
+        <!--=======paper information: name authour and institution  ========= -->
+        <center>
+            <h1>Data Playwright: Authoring Data Videos with Annotated Narration</h1>
+
+            <h3>
+                <span>
+                    <a href="https://shenleixian.github.io/" target="_blank">Leixian Shen</a>
+                </span><sup>1</sup>&nbsp;&nbsp;
+                <span>
+                    <a href="https://haotian-li.com/" target="_blank">Haotian Li</a>
+                </span><sup>1</sup>&nbsp;&nbsp;
+                <span>
+                    <a href="https://www.microsoft.com/en-us/research/people/wangyun/" target="_blank">Yun Wang</a>
+                </span><sup>2</sup>&nbsp;&nbsp;
+                <span>Tianqi Luo </span><sup>3</sup>&nbsp; &nbsp;
+                <span>
+                    <a href="https://luoyuyu.vip/" target="_blank">Yuyu Luo</a>
+                </span><sup>1, 3</sup>&nbsp;&nbsp;
+                <span>
+                    <a href="http://huamin.org/" target="_blank">Huamin Qu</a>
+                </span><sup>1</sup>&nbsp;&nbsp;
+            </h3>
+            <h5>
+                <sup>1</sup>The Hong Kong University of Science and Technology, Hong Kong SAR, China &nbsp;<br>
+                <sup>2</sup>Microsoft, Beijing, China &nbsp;<br>
+                <sup>3</sup>The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China &nbsp;
+            </h5>
+
+            <h4>IEEE Transactions on Visualization and Computer Graphics (Proc. <a href="http://ieeevis.org/year/2024/welcome">IEEE VIS 2024</a>)</h4>
+                <hr> 
+        </center>
+
+        <!--=======teaser========= -->
+        <a target="_blank"><img src="./material/image/teaser.png" alt="" width="950"></a>
+        <!-- <p class="style_text" align="left"><b>Figure 1</b>: Comparison of the 5-Gaussian dataset projection of four
+            different t-SNE methods. a) t-SNE produced misaligned layouts all across four time frames. b)
+            Equal-initialization t-SNE provides better visual consistency than t-SNE but there are still unnecessary
+            movements of clusters. c) Dynamic t-SNE showed smoothing effect by distorting projections at t = 2 and 3. d)
+            Joint t-SNE generated coherent and reliable projections that reﬂected the ground-truth transformations of
+            clusters.</p> -->
+        <br>
+
+        <!--=======draw line========= -->
+
+        <!-- <hr> -->
+
+        <!--=======Abstract========= -->
+        <section>
+            <h2 class="para-title">Abstract:</h2>
+            <p>
+                Creating data videos that effectively narrate stories with animated visuals requires substantial effort and expertise. A promising research trend is leveraging the easy-to-use natural language (NL) interaction to automatically synthesize data video components from narrative content like text narrations, or NL commands that specify user-required designs. Nevertheless, previous research has overlooked the integration of narrative content and specific design authoring commands, leading to generated results that lack customization or fail to seamlessly fit into the narrative context. To address these issues, we introduce a novel paradigm for creating data videos, which seamlessly integrates users’ authoring and narrative intents in a unified format called annotated narration, allowing users to incorporate NL commands for design authoring as inline annotations within the narration text. Informed by a formative study on users’ preference for annotated narration, we develop a prototype system named Data Playwright that embodies this paradigm for effective creation of data videos. Within Data Playwright, users can write annotated narration based on uploaded visualizations. The system’s interpreter automatically understands users’ inputs and synthesizes data videos with narration-animation interplay, powered by large language models. Finally, users can preview and fine-tune the video. A user study demonstrated that participants can effectively create data videos with Data Playwright by effortlessly articulating their desired outcomes through annotated narration.
+        </p>
+        </section>
+
+
+        <!--=======Video========= -->
+
+        <p><span class="style1">Introduction Video:</span></p>
+
+        <p align="center"><video src="./material/video/intro.mp4" controls="controls" width="950"></video></p>
+        <p>
+            <br>
+            <br>
+            <br>
+
+            <!--=======materials========= -->
+            </p><section>
+                <h2 class="para-title">Resources:</h2><br><br><br><br>
+                <a href="./material/pdf/paper.pdf">Paper</a> ｜
+                <a href="./material/pdf/supp.zip">Supp</a><br>
+            </section>
+
+            <!-- <h2 class="para-title">Materials:</h2>
+        <p><b>Paper:</b><a href="./shapewordle.pdf">[PDF 28.7M]</a>. </p>
+        <p><b> Supp:</b><a href="./shapewordle_supp.pdf">[PDF 157M]</a>. </p> -->
+
+            <!-- <section>
+                <h2 class="para-title">Overview:</h2><br><br><br><br>
+                <a href="tech_illustrate.png" target="_blank" style="margin:0 auto"><img src="tech_illustrate.png"
+                        alt="" width="950"></a>
+                <p class="style_text" align="left"><b>Figure 2</b>:
+                    Technical Illustration of Joint t-SNE. Note that we only consider 3-node graphlets for simplicity.
+                    a) Some changes happened between X<sub>0</sub> and X<sub>1</sub> . Several points broke the
+                    neighborhood relationship with the original cluster. Joint t-SNE measures the similarity of local
+                    structures to ﬁnd such changes and computes edge similarities (S<sub>e<sub>12</sub></sub> >
+                    S<sub>e<sub>13</sub></sub> > S<sub>e<sub>14</sub></sub> ). b) Using edge similarity as the weight of
+                    the corresponding vector constraint, Joint t-SNE generates projection Y<sub>1</sub> , which keeps
+                    the relative position of points in Y<sub>0</sub> accordingly.
+                </p>
+            </section> -->
+
+
+            <!-- <section>
+                <a  target="_blank"><video src="./material/video/tax-payment.mp4" controls="controls" width="470"></a>
+                <p class="style_text" align="left"><b>Figure 1</b></p>
+                <br><br>
+            </section> -->
+
+            <section>
+                <h2 class="para-title">Example Gallery:</h2><br><br><br><br>
+                Here are just a few examples presented in the <a href="./material/pdf/paper.pdf">paper</a>; more can be found in the <a href="./material/pdf/supp.zip">supplementary material</a>.
+                <br><br><br>
+
+                <video width="470" poster="./material/image/1.svg" controls>
+                    <source src="./material/video/1.mov" type="video/mp4">
+                </video>
+
+                <video width="470" poster="./material/image/4.svg" controls>
+                    <source src="./material/video/4.mp4" type="video/mp4">
+                </video>
+
+                <video width="470" poster="./material/image/3.svg" controls>
+                    <source src="./material/video/3.mp4" type="video/mp4">
+                </video>
+
+                <video width="470" poster="./material/image/2.svg" controls>
+                    <source src="./material/video/2.mp4" type="video/mp4">
+                </video>
+
+
+
+                <!-- <a  target="_blank"><img src="./material/image/pipeline.png" alt="" width="950"></a> -->
+                <!-- <p align="center"><video src="./material/video/tax-payment.mp4" controls="controls" width="470"></video></p>
+                <p align="center"><video src="./material/video/chinese-tourists.mp4" controls="controls" width="470"></video></p>
+                <p align="center"><video src="./material/video/tourism.mp4" controls="controls" width="460"></video></p>
+                <p align="center"><video src="./material/video/Likert.mp4" controls="controls" width="470"></video></p>
+                <p align="center"><video src="./material/video/PM2.5.mp4" controls="controls" width="460"></video></p>
+                <p align="center"><video src="./material/video/stock-price.mp4" controls="controls" width="470"></video></p> -->
+                <!-- <p class="style_text" align="left"><b>Figure 1</b>:
+                    Overview of our tree construction: (a) a set of input curves with point samples (white) and split points (orange); (b) the KD-tree in TVS space built for the input curves with the newly-added split points (yellow), the thickness of split planes’ borders (blue) indicates the level, where split planes of thicker borders are in the upper (higher) levels of the KD-tree; and (c) the curve segment in each grid cell volume is fit by a straight-line segment.
+                </p> -->
+                <br><br>
+                
+
+
+            </section>
+
+            <!-- <section>
+                <h2 class="para-title">Acknowledgements:</h2>
+                <p>
+                    This work is supported by the grants of the NSFC (61772315, 61861136012), the Open Project Program
+                    of State Key Laboratory of Virtual Reality Technology and Systems, Beihang University
+                    (No.VRLAB2020C08), and the CAS grant (GJHZ1862).
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+
+
+            </section> -->
+
+
+    </div>
+
+
+

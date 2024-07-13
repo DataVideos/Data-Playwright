@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" class="radar.radarChart">
+    <g transform="translate(350,350)">
+        <defs>
+            <filter id="glow">
+                <feGaussianBlur stdDeviation="2.5" result="coloredBlur"></feGaussianBlur>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+            </filter>
+        </defs>
+        <g class="axisWrapper">
+            <circle class="sector mark chart scene" r="250" style="fill: rgb(205, 205, 205); stroke: rgb(205, 205, 205); fill-opacity: 0.1; filter: url(&quot;#glow&quot;);" id="chart-0">
+            </circle>
+            <circle class="sector mark chart scene" r="200" style="fill: rgb(205, 205, 205); stroke: rgb(205, 205, 205); fill-opacity: 0.1; filter: url(&quot;#glow&quot;);" id="chart-1">
+            </circle>
+            <circle class="sector mark chart scene" r="150" style="fill: rgb(205, 205, 205); stroke: rgb(205, 205, 205); fill-opacity: 0.1; filter: url(&quot;#glow&quot;);" id="chart-2">
+            </circle>
+            <circle class="sector mark chart scene" r="100" style="fill: rgb(205, 205, 205); stroke: rgb(205, 205, 205); fill-opacity: 0.1; filter: url(&quot;#glow&quot;);" id="chart-3">
+            </circle>
+            <circle class="sector mark chart scene" r="50" style="fill: rgb(205, 205, 205); stroke: rgb(205, 205, 205); fill-opacity: 0.1; filter: url(&quot;#glow&quot;);" id="chart-4">
+            </circle><text class="sector-label label mark chart scene" x="4" y="-250" dy="0.4em" style="font-size: 15px;" fill="#737373" id="chart-5">50%</text><text class="sector-label label mark chart scene" x="4" y="-200" dy="0.4em" style="font-size: 15px;" fill="#737373" id="chart-6">40%</text><text class="sector-label label mark chart scene" x="4" y="-150" dy="0.4em" style="font-size: 15px;" fill="#737373" id="chart-7">30%</text><text class="sector-label label mark chart scene" x="4" y="-100" dy="0.4em" style="font-size: 15px;" fill="#737373" id="chart-8">20%</text><text class="sector-label label mark chart scene" x="4" y="-50" dy="0.4em" style="font-size: 15px;" fill="#737373" id="chart-9">10%</text>
+            <g class="axis">
+                <line x1="0" y1="0" x2="1.6838893488276108e-14" y2="-275" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-10"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="1.9135106236677395e-14" y="-312.5" id="chart-11">
+                    <tspan x="1.9135106236677395e-14" y="-312.5" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-12">Battery</tspan>
+                    <tspan x="1.9135106236677395e-14" y="-312.5" dy="1.2em" class="x-title title x-axis axis chart scene" id="chart-13">Life</tspan>
+                </text>
+            </g>
+            <g class="axis">
+                <line x1="0" y1="0" x2="194.45436482630058" y2="-194.45436482630055" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-14"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="220.97086912079612" y="-220.9708691207961" id="chart-15">
+                    <tspan x="220.97086912079612" y="-220.9708691207961" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-16">Brand</tspan>
+                </text>
+            </g>
+            <g class="axis">
+                <line x1="0" y1="0" x2="275" y2="0" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-17"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="312.5" y="0" id="chart-18">
+                    <tspan x="312.5" y="0" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-19">Contract</tspan>
+                    <tspan x="312.5" y="0" dy="1.2em" class="x-title title x-axis axis chart scene" id="chart-20">Cost</tspan>
+                </text>
+            </g>
+            <g class="axis">
+                <line x1="0" y1="0" x2="194.45436482630058" y2="194.45436482630055" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-21"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="220.97086912079612" y="220.9708691207961" id="chart-22">
+                    <tspan x="220.97086912079612" y="220.9708691207961" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-23">Design</tspan>
+                    <tspan x="220.97086912079612" y="220.9708691207961" dy="1.2em" class="x-title title x-axis axis chart scene" id="chart-24">And</tspan>
+                    <tspan x="220.97086912079612" y="220.9708691207961" dy="2.2em" class="x-title title x-axis axis chart scene" id="chart-25">Quality</tspan>
+                </text>
+            </g>
+            <g class="axis">
+                <line x1="0" y1="0" x2="1.6838893488276108e-14" y2="275" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-26"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="1.9135106236677395e-14" y="312.5" id="chart-27">
+                    <tspan x="1.9135106236677395e-14" y="312.5" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-28">Have</tspan>
+                    <tspan x="1.9135106236677395e-14" y="312.5" dy="1.2em" class="x-title title x-axis axis chart scene" id="chart-29">Internet</tspan>
+                    <tspan x="1.9135106236677395e-14" y="312.5" dy="2.2em" class="x-title title x-axis axis chart scene" id="chart-30">Connectivity</tspan>
+                </text>
+            </g>
+            <g class="axis">
+                <line x1="0" y1="0" x2="-194.45436482630055" y2="194.45436482630058" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-31"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="-220.9708691207961" y="220.97086912079612" id="chart-32">
+                    <tspan x="-220.9708691207961" y="220.97086912079612" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-33">Large</tspan>
+                    <tspan x="-220.9708691207961" y="220.97086912079612" dy="1.2em" class="x-title title x-axis axis chart scene" id="chart-34">Screen</tspan>
+                </text>
+            </g>
+            <g class="axis">
+                <line x1="0" y1="0" x2="-275" y2="3.3677786976552216e-14" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-35"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="-312.5" y="3.827021247335479e-14" id="chart-36">
+                    <tspan x="-312.5" y="3.827021247335479e-14" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-37">Price Of</tspan>
+                    <tspan x="-312.5" y="3.827021247335479e-14" dy="1.2em" class="x-title title x-axis axis chart scene" id="chart-38">Device</tspan>
+                </text>
+            </g>
+            <g class="axis">
+                <line x1="0" y1="0" x2="-194.4543648263006" y2="-194.45436482630055" class="line mark chart scene" style="stroke: white; stroke-width: 2px;" id="chart-39"></line><text class="x-title title x-axis axis chart scene" style="font-size: 14px;" text-anchor="middle" dy="0.2em" x="-220.97086912079615" y="-220.9708691207961" id="chart-40">
+                    <tspan x="-220.97086912079615" y="-220.9708691207961" dy="0.2em" class="x-title title x-axis axis chart scene" id="chart-41">To Be A</tspan>
+                    <tspan x="-220.97086912079615" y="-220.9708691207961" dy="1.2em" class="x-title title x-axis axis chart scene" id="chart-42">Smartphone</tspan>
+                </text>
+            </g>
+        </g>
+        <g class="radarWrapper">
+            <path class="bar mark chart scene" d="M6.735557395310443e-15,-110C41.36574669941305,-98.33273811042197,77.24494936611666,-115.49494936611664,98.99494936611666,-98.99494936611664S150.833630944789,-23.86485386504598,145,0S81.85407640085654,43.60407640085653,60.10407640085654,60.104076400856535S10.07627163190831,117.95495128834867,6.735557395310443e-15,110S8.678932188134528,23.571067811865476,-7.071067811865475,7.0710678118654755S-79.54415587728428,27.57716446627537,-105,1.2858791391047208e-14S-192.52669529663692,-160.27669529663686,-176.77669529663692,-176.77669529663686S-41.36574669941304,-121.66726188957803,6.735557395310443e-15,-110" style="fill: rgb(237, 201, 81); fill-opacity: 0.35;" id="chart-43"></path>
+            <path class="unknown-type radar chart radarStroke" d="M6.735557395310443e-15,-110C41.36574669941305,-98.33273811042197,77.24494936611666,-115.49494936611664,98.99494936611666,-98.99494936611664S150.833630944789,-23.86485386504598,145,0S81.85407640085654,43.60407640085653,60.10407640085654,60.104076400856535S10.07627163190831,117.95495128834867,6.735557395310443e-15,110S8.678932188134528,23.571067811865476,-7.071067811865475,7.0710678118654755S-79.54415587728428,27.57716446627537,-105,1.2858791391047208e-14S-192.52669529663692,-160.27669529663686,-176.77669529663692,-176.77669529663686S-41.36574669941304,-121.66726188957803,6.735557395310443e-15,-110" style="stroke-width: 2px; stroke: rgb(237, 201, 81); fill: none; filter: url(&quot;#glow&quot;);" id="chart-44">
+            </path>
+            <circle class="unknown-type radar chart point" r="4" cx="6.735557395310443e-15" cy="-110" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-45"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="98.99494936611666" cy="-98.99494936611664" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-46"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="145" cy="0" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-47"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="60.10407640085654" cy="60.104076400856535" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-48"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="6.735557395310443e-15" cy="110" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-49"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-7.071067811865475" cy="7.0710678118654755" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-50"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-105" cy="1.2858791391047208e-14" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-51"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-176.77669529663692" cy="-176.77669529663686" style="fill: rgb(237, 201, 81); fill-opacity: 0.8;" id="chart-52"></circle>
+        </g>
+        <g class="radarWrapper">
+            <path class="bar mark chart scene" d="M8.266365894244634e-15,-135C28.637824638055193,-123.33273811042197,30.3185424949238,-76.8185424949238,56.568542494923804,-56.5685424949238S176.59099025766974,-15.379572490807409,175,0S72.21194077712559,30.961940777125584,45.96194077712559,45.961940777125584S13.788582233137685,100,6.123233995736766e-15,100S-19.71194077712558,60.96194077712559,-45.961940777125584,45.96194077712559S-161.7417478527522,27.046834380385466,-175,2.1431318985078682e-14S-160.60028842544406,-114.100288425444,-134.35028842544406,-134.350288425444S-28.63782463805518,-146.66726188957804,8.266365894244634e-15,-135" style="fill: rgb(204, 51, 63); fill-opacity: 0.35;" id="chart-53"></path>
+            <path class="unknown-type radar chart radarStroke" d="M8.266365894244634e-15,-135C28.637824638055193,-123.33273811042197,30.3185424949238,-76.8185424949238,56.568542494923804,-56.5685424949238S176.59099025766974,-15.379572490807409,175,0S72.21194077712559,30.961940777125584,45.96194077712559,45.961940777125584S13.788582233137685,100,6.123233995736766e-15,100S-19.71194077712558,60.96194077712559,-45.961940777125584,45.96194077712559S-161.7417478527522,27.046834380385466,-175,2.1431318985078682e-14S-160.60028842544406,-114.100288425444,-134.35028842544406,-134.350288425444S-28.63782463805518,-146.66726188957804,8.266365894244634e-15,-135" style="stroke-width: 2px; stroke: rgb(204, 51, 63); fill: none; filter: url(&quot;#glow&quot;);" id="chart-54"></path>
+            <circle class="unknown-type radar chart point" r="4" cx="8.266365894244634e-15" cy="-135" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-55"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="56.568542494923804" cy="-56.5685424949238" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-56"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="175" cy="0" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-57"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="45.96194077712559" cy="45.961940777125584" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-58"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="6.123233995736766e-15" cy="100" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-59"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-45.961940777125584" cy="45.96194077712559" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-60"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-175" cy="2.1431318985078682e-14" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-61"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-134.35028842544406" cy="-134.350288425444" style="fill: rgb(204, 51, 63); fill-opacity: 0.8;" id="chart-62"></circle>
+        </g>
+        <g class="radarWrapper">
+            <path class="bar mark chart scene" d="M7.960204194457796e-15,-130C21.213203435596437,-119.39339828220179,12.855339059327374,-54.85533905932738,35.35533905932738,-35.35533905932737S147.87867965644037,-12.727922061357855,150,0S71.99747468305833,32.997474683058314,49.49747468305833,49.49747468305832S9.545941546018401,115.3033008588991,6.735557395310443e-15,110S16.607864376269056,30.642135623730947,-14.14213562373095,14.142135623730951S-191.21141776686233,18.031222920256987,-205,2.510525938252074e-14S-136.81601717798216,-86.5660171779821,-106.06601717798215,-106.06601717798212S-21.213203435596423,-140.6066017177982,7.960204194457796e-15,-130" style="fill: rgb(0, 160, 176); fill-opacity: 0.35;" id="chart-63"></path>
+            <path class="unknown-type radar chart radarStroke" d="M7.960204194457796e-15,-130C21.213203435596437,-119.39339828220179,12.855339059327374,-54.85533905932738,35.35533905932738,-35.35533905932737S147.87867965644037,-12.727922061357855,150,0S71.99747468305833,32.997474683058314,49.49747468305833,49.49747468305832S9.545941546018401,115.3033008588991,6.735557395310443e-15,110S16.607864376269056,30.642135623730947,-14.14213562373095,14.142135623730951S-191.21141776686233,18.031222920256987,-205,2.510525938252074e-14S-136.81601717798216,-86.5660171779821,-106.06601717798215,-106.06601717798212S-21.213203435596423,-140.6066017177982,7.960204194457796e-15,-130" style="stroke-width: 2px; stroke: rgb(0, 160, 176); fill: none; filter: url(&quot;#glow&quot;);" id="chart-64"></path>
+            <circle class="unknown-type radar chart point" r="4" cx="7.960204194457796e-15" cy="-130" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-65"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="35.35533905932738" cy="-35.35533905932737" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-66"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="150" cy="0" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-67"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="49.49747468305833" cy="49.49747468305832" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-68"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="6.735557395310443e-15" cy="110" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-69"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-14.14213562373095" cy="14.142135623730951" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-70"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-205" cy="2.510525938252074e-14" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-71"></circle>
+            <circle class="unknown-type radar chart point" r="4" cx="-106.06601717798215" cy="-106.06601717798212" style="fill: rgb(0, 160, 176); fill-opacity: 0.8;" id="chart-72"></circle>
+        </g>
+        <g class="radarCircleWrapper"></g>
+        <g class="radarCircleWrapper"></g>
+        <g class="radarCircleWrapper"></g>
+        <g class="axisWrapper"></g>
+        <g class="legend" transform="translate(270,-320)">
+            <rect x="0" y="0" width="10" height="10" style="fill: rgb(237, 201, 81);" class="legend-symbol legend chart scene" id="chart-73"></rect><text x="15" y="5" dy=".35em" style="font-size: 15px;" class="legend-label legend chart scene" id="chart-74">iPhone</text>
+            <rect x="0" y="20" width="10" height="10" style="fill: rgb(204, 51, 63);" class="legend-symbol legend chart scene" id="chart-75"></rect><text x="15" y="25" dy=".35em" style="font-size: 15px;" class="legend-label legend chart scene" id="chart-76">Samsung</text>
+            <rect x="0" y="40" width="10" height="10" style="fill: rgb(0, 160, 176);" class="legend-symbol legend chart scene" id="chart-77"></rect><text x="15" y="45" dy=".35em" style="font-size: 15px;" class="legend-label legend chart scene" id="chart-78">Nokia</text>
+        </g>
+    </g>
+</svg>
